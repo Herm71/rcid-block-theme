@@ -1,5 +1,5 @@
 {
-  "name": "rcidblockbasechild",
+  "name": "rcidblocktheme",
   "version": "1.0.0",
   "description": "packages for rcidblockbasechild",
   "main": "build/index.js",

@@ -2,11 +2,22 @@
 	--wpadmin-bar--height: 46px;
 }
 
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 .wp-site-blocks {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
+
 
 .site-footer-container {
 	margin-top: auto;
@@ -21,3 +32,8 @@ body.admin-bar {
 		min-height: calc( 100vh - var(--wpadmin-bar--height) );
 	}
 }
+
+
+.blog .wp-container-core-columns-layout-12.wp-container-core-columns-layout-12 {
+	margin: 0 auto;
+	max-width: var(--wp--style--global--content-size);;}
