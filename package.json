@@ -1,7 +1,7 @@
 {
   "name": "rcidblocktheme",
   "version": "1.0.0",
-  "description": "packages for rcidblockbasechild",
+  "description": "packages for rcidblocktheme",
   "main": "build/index.js",
   "scripts": {
     "build": "wp-scripts build",
