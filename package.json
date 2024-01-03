@@ -1,7 +1,7 @@
 {
-  "name": "rcidblocktheme",
+  "name": "rcid-block-theme",
   "version": "1.0.0",
-  "description": "packages for rcidblocktheme",
+  "description": "packages for RCID WordPress block theme",
   "main": "build/index.js",
   "scripts": {
     "build": "wp-scripts build",
@@ -40,6 +40,7 @@
     "CHANGELOG.md",
     "build",
     "theme.json",
+    "composer.json",
     "templates",
     "parts",
     "block-styles",
