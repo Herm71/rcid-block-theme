@@ -1,7 +1,35 @@
-<!-- wp:template-part {"slug":"header-wide","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header-inner","area":"header"} /-->
 
 <!-- wp:group {"layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:post-title /--></div>
+<div class="wp-block-group"><!-- wp:post-title {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}}} /-->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:post-date {"textAlign":"right"} /-->
+
+<!-- wp:paragraph -->
+<p>by</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-author {"showAvatar":false} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:outermost/social-sharing {"iconBackgroundColor":"tertiary","iconBackgroundColorValue":"#F5821F","layout":{"type":"flex","justifyContent":"right"}} -->
+<ul class="wp-block-outermost-social-sharing has-icon-background-color"><!-- wp:outermost/social-sharing-link {"service":"facebook","label":"Ruth Chafin Interior Design"} /-->
+
+<!-- wp:outermost/social-sharing-link {"service":"linkedin"} /-->
+
+<!-- wp:outermost/social-sharing-link {"service":"x"} /-->
+
+<!-- wp:outermost/social-sharing-link {"service":"flipboard"} /-->
+
+<!-- wp:outermost/social-sharing-link {"service":"pinterest"} /--></ul>
+<!-- /wp:outermost/social-sharing --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"main","lock":{"move":false,"remove":true}} -->

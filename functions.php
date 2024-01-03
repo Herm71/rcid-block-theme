@@ -20,8 +20,22 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 	function rcid_setup() {
 
 		add_theme_support( 'wp-block-styles' );
-		add_editor_style( 'build/style-index.css' );
+		add_editor_style( 'build/index.css' );
 
+/*
+		* Load additional Core block styles.
+		*/
+		$styled_blocks = array( 'core/image', 'core/post-title' );
+		foreach ( $styled_blocks as $block ) {
+
+			$name = explode('/', $block);
+			$args = array(
+				'handle' => "rcid-$name[1]",
+				'src'    => get_theme_file_uri( "block-styles/$name[1].css" ),
+				$args['path'] = get_theme_file_path( "wp-blocks/$name[1].css" ),
+			);
+			wp_enqueue_block_style( $block, $args );
+		}
 		/**
 		 * Include ThemeHybrid/HyridBreadcrumbs Class
 		 * see: https://github.com/themehybrid/hybrid-breadcrumbs
@@ -42,7 +56,11 @@ function rcid_scripts() {
 	wp_enqueue_style( 'rcid-styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'rcid-styles-scss', get_template_directory_uri() . '/build/index.css', array(), wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'rcid-google-lato-font', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap', false );
-
+	wp_register_script( 'rcid-front', get_template_directory_uri() . '/build/theme.js', array(), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'rcid-front' );
+	wp_enqueue_style(
+		'dashicons'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'rcid_scripts' );
 
@@ -94,5 +112,6 @@ function rcid_add_breadcrumbs( $block_content = '', $block = array() ) {
 		}
 	}
 	return $block_content;
+	var_dump($breadcrumbs);
 }
 add_filter( 'render_block', 'rcid_add_breadcrumbs', 10, 2 );
