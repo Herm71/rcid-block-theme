@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/Herm71/rcid-block-theme/compare/v1.1.1...v1.1.2) (2024-01-05)
+
+
+### Bug Fixes
+
+* :art: replace screenshot.png ([ccd4dda](https://github.com/Herm71/rcid-block-theme/commit/ccd4dda3a8e48a919f65efe2073928828d461e4c))
+
 ### [1.1.1](https://github.com/Herm71/rcid-block-theme/compare/v1.0.0...v1.1.1) (2024-01-05)
 
 ## [1.1.0](https://github.com/Herm71/rcid-block-theme/compare/v1.0.0...v1.1.0) (2024-01-05)
