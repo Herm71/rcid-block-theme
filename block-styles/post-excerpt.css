@@ -1,0 +1,22 @@
+.wp-block-post-excerpt__more-text {
+	display: initial;
+}
+
+.wp-block-post-excerpt__more-text a {
+	background: var( --wp--preset--color--background);
+	border: 3px solid var(--wp--custom--color--tertiary);
+	padding: 10px 16px;
+	color: var(--wp--custom--color--tertiary);
+	text-decoration: none;
+	font-weight:700;
+	margin: 0.5rem 0;
+}
+
+.wp-block-post-excerpt__more-text a:hover {
+	background: var( --wp--preset--color--secondary);
+	border: 3px solid var(--wp--custom--color--secondary);
+	padding: 10px 16px;
+	color: var( --wp--preset--color--background);
+	text-decoration: none;
+	font-weight:700;
+}

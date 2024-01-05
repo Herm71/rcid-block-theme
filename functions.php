@@ -25,7 +25,7 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 /*
 		* Load additional Core block styles.
 		*/
-		$styled_blocks = array( 'core/image', 'core/post-title' );
+		$styled_blocks = array( 'core/image', 'core/post-title', 'core/post-excerpt' );
 		foreach ( $styled_blocks as $block ) {
 
 			$name = explode('/', $block);

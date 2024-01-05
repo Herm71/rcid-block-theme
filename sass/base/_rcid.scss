@@ -31,5 +31,11 @@
 		font-size: 50px;
 		text-decoration: none;
 		border-radius: 50%;
+	};
+	&:hover {
+		.dashicons-arrow-up-alt2 {
+			color: var(--wp--preset--color--white);
+			background-color: var(--wp--preset--color--secondary);
+		}
 	}
 }

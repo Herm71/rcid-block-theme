@@ -40,7 +40,7 @@
 					"slug": "secondary"
 				},
 				{
-					"color": "#F5821F",
+					"color": "#B95B09",
 					"name": "Tertiary",
 					"slug": "tertiary"
 				},
@@ -72,21 +72,21 @@
 			},
 			"button": {
 				"border": {
-					"color": "var(--wp--custom--color--primary)",
+					"color": "var(--wp--custom--color--tertiary)",
 					"radius": "4px",
 					"style": "solid",
 					"width": "2px"
 				},
 				"color": {
-					"background": "var(--wp--custom--color--primary)",
+					"background": "var(--wp--custom--color--tertiary)",
 					"text": "var(--wp--preset--color--white)"
 				},
 				"hover": {
 					"border": {
-						"color": "var(--wp--custom--color--tertiary)"
+						"color": "var(--wp--custom--color--secondary)"
 					},
 					"color": {
-						"background": "var(--wp--custom--color--tertiary)",
+						"background": "var(--wp--custom--color--secondary)",
 						"text": "var(--wp--custom--color--background)"
 					}
 				},
@@ -137,10 +137,10 @@
 			},
 			"form": {
 				"border": {
-					"color": "#EFEFEF",
+					"color": "var(--wp--custom--color--secondary)",
 					"radius": "0",
 					"style": "solid",
-					"width": "2px"
+					"width": "1px"
 				},
 				"checkbox": {
 					"checked": {
@@ -686,7 +686,7 @@
 					}
 				},
 				"color": {
-					"text": "var(--wp--custom--color--primary)"
+					"text": "var(--wp--custom--color--tertiary)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--lato)"
