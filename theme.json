@@ -681,12 +681,12 @@
 					}
 				},
 				":hover": {
-					"typography": {
-						"textDecoration": "none"
-					},
 					"color": {
 						"background": "var(--wp--custom--color--secondary)",
 						"text": "var(--wp--preset--color--white)"
+					},
+					"typography": {
+						"textDecoration": "none"
 					}
 				},
 				"color": {
