@@ -12,6 +12,9 @@
  */
 
 .topbutton {
+	&:hover {
+		border-radius:50%;
+	}
 	text-align: center;
 	height: 50px;
 	width: 50px;
@@ -24,6 +27,7 @@
 	border-bottom: none;
 	text-decoration:none;
 	color: var(--wp--preset--color--white);
+	
 	.dashicons-arrow-up-alt2 {
 		background-color: var(--wp--preset--color--tertiary);
 		width: 50px;
@@ -34,8 +38,10 @@
 	};
 	&:hover {
 		.dashicons-arrow-up-alt2 {
+
 			color: var(--wp--preset--color--white);
 			background-color: var(--wp--preset--color--secondary);
+			
 		}
 	}
 }
