@@ -13,7 +13,7 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @since UCSC 1.0.0
+	 * @since RCID 1.0.0
 	 *
 	 * @return void
 	 */
@@ -36,11 +36,6 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 			);
 			wp_enqueue_block_style( $block, $args );
 		}
-		/**
-		 * Include ThemeHybrid/HyridBreadcrumbs Class
-		 * see: https://github.com/themehybrid/hybrid-breadcrumbs
-		 * and https://themehybrid.com/weblog/integrating-hybrid-breadcrumbs-into-wordpress-themes
-		 */
 		if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
 			include_once get_parent_theme_file_path( 'vendor/autoload.php' );
 		}
