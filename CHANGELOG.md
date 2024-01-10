@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Herm71/rcid-block-theme/compare/v1.2.0...v1.3.0) (2024-01-10)
+
+
+### Features
+
+* :art: Filter Blog (home) page title to reflect actual title. Adjust template accordingly. ([26c12bc](https://github.com/Herm71/rcid-block-theme/commit/26c12bc6faad95f14e63cef01171c7c95e34f5e9))
+
+
+### Bug Fixes
+
+* :art: Fix class name in blog title block ([9316dea](https://github.com/Herm71/rcid-block-theme/commit/9316dea761baba8439e86e0d2aa90e0c94b40e57))
+
 ## [1.2.0](https://github.com/Herm71/rcid-block-theme/compare/v1.1.2...v1.2.0) (2024-01-06)
 
 
