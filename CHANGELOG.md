@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/Herm71/rcid-block-theme/compare/v1.3.0...v1.3.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* :memo: Write `README.md` and add badges from Shields.io ([3365870](https://github.com/Herm71/rcid-block-theme/commit/33658701386ae6b8fb4d99818e7e153bcaf500be))
+
 ## [1.3.0](https://github.com/Herm71/rcid-block-theme/compare/v1.2.0...v1.3.0) (2024-01-10)
 
 
