@@ -13,7 +13,7 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @since UCSC 1.0.0
+	 * @since RCID 1.0.0
 	 *
 	 * @return void
 	 */
@@ -36,11 +36,6 @@ if ( ! function_exists( 'rcid_setup' ) ) :
 			);
 			wp_enqueue_block_style( $block, $args );
 		}
-		/**
-		 * Include ThemeHybrid/HyridBreadcrumbs Class
-		 * see: https://github.com/themehybrid/hybrid-breadcrumbs
-		 * and https://themehybrid.com/weblog/integrating-hybrid-breadcrumbs-into-wordpress-themes
-		 */
 		if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
 			include_once get_parent_theme_file_path( 'vendor/autoload.php' );
 		}
@@ -71,4 +66,36 @@ function rcid_googleapi_scripts() {
 	echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
 }
 add_action( 'wp_head', 'rcid_googleapi_scripts' );
+
+/**
+ * Change Blog page title
+ * instead of title of first blog post
+ * Let’s Do Some Rearranging</h2>
+ * @param  string $block_content Block content to be rendered.
+ * @param  array  $block         Block attributes.
+ * @return string
+ * @package RCID
+ * @since 1.3.0
+ */
+function rcid_block_filter( $block_content = '', $block = array() ) {
+	if ( is_home() ) {
+		if ( isset( $block['blockName'] ) && 'core/post-title' === $block['blockName'] ) {
+			if ( isset( $block['attrs']['className'] ) && $block['attrs']['className'] === 'blog-page-title' ) {
+				$new_title   = get_the_title( get_option( 'page_for_posts' ) );
+				$new_content = '<h2 class="blog-page-title wp-block-post-title">' . $new_title . '</h2>';
+				$html        = str_replace(
+					$block_content,
+					$new_content,
+					$block_content
+				);
+				return $html;
+
+			}
+		}
+	}
+	return $block_content;
+}
+
+add_filter( 'render_block', 'rcid_block_filter', 10, 2 );
+
 
