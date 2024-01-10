@@ -1,111 +1,146 @@
-<!-- wp:template-part {"slug":"header-inner","area":"header"} /-->
+<!-- wp:template-part {"slug":"header-inner","theme":"rcid-block-theme","area":"header"} /-->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:yoast-seo/breadcrumbs /-->
+	<div class="wp-block-group"><!-- wp:yoast-seo/breadcrumbs /-->
 
-<!-- wp:paragraph {"fontSize":"x-large"} -->
-<p class="has-x-large-font-size">Blog</p>
-<!-- /wp:paragraph --></div>
+		<!-- wp:post-title /-->
+		</div>
+		<!-- /wp:group -->
+
+	<!-- wp:spacer {"height":"9px"} -->
+	<div style="height:9px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:columns -->
+	<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+		<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:group {"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group">
+				<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"tagName":"main","layout":{"contentSize":null,"type":"constrained"}} -->
+				<main class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
+					<!-- wp:group -->
+					<div class="wp-block-group">
+						<!-- wp:post-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"margin":{"bottom":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} /-->
+
+						<!-- wp:columns -->
+						<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+							<div class="wp-block-column" style="flex-basis:66.66%">
+								<!-- wp:post-author {"style":{"color":{"duotone":["#000000","#ffffff"]},"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"secondary"} /-->
+							</div>
+							<!-- /wp:column -->
+
+							<!-- wp:column {"width":"33.33%"} -->
+							<div class="wp-block-column" style="flex-basis:33.33%">
+								<!-- wp:post-date {"textAlign":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"secondary"} /-->
+
+								<!-- wp:outermost/social-sharing {"iconBackgroundColor":"tertiary","iconBackgroundColorValue":"#F5821F","layout":{"type":"flex","justifyContent":"right"}} -->
+								<ul class="wp-block-outermost-social-sharing has-icon-background-color">
+									<!-- wp:outermost/social-sharing-link {"service":"facebook","label":"Ruth Chafin Interior Design"} /-->
+
+									<!-- wp:outermost/social-sharing-link {"service":"linkedin","label":"Ruth Chafin Interior Design"} /-->
+
+									<!-- wp:outermost/social-sharing-link {"service":"x","label":"Ruth Chafin Interior Design"} /-->
+
+									<!-- wp:outermost/social-sharing-link {"service":"pinterest","label":"Ruth Chafin Interior Design"} /-->
+									</ul>
+									<!-- /wp:outermost/social-sharing -->
+									</div>
+									<!-- /wp:column -->
+									</div>
+									<!-- /wp:columns -->
+
+						<!-- wp:post-featured-image /-->
+
+						<!-- wp:spacer {"height":"10px"} -->
+						<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+						<!-- /wp:spacer -->
+
+						<!-- wp:post-excerpt {"moreText":"Read this post","style":{"spacing":{"padding":{"top":"0","bottom":"0"},"margin":{"top":"0"}}}} /-->
+
+						<!-- wp:template-part {"slug":"post-meta-icons","theme":"rcid-block-theme"} /-->
+
+						<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"accent","className":"is-style-wide"} -->
+						<hr
+							class="wp-block-separator has-text-color has-accent-color has-alpha-channel-opacity has-accent-background-color has-background is-style-wide"
+							style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)" />
+						<!-- /wp:separator -->
+
+						<!-- wp:spacer {"height":"40px"} -->
+						<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+						<!-- /wp:spacer -->
+						</div>
+						<!-- /wp:group -->
+						<!-- /wp:post-template -->
+
+					<!-- wp:query-pagination -->
+					<!-- wp:query-pagination-previous /-->
+
+					<!-- wp:query-pagination-numbers /-->
+
+					<!-- wp:query-pagination-next /-->
+					<!-- /wp:query-pagination -->
+					</main>
+					<!-- /wp:query -->
+					</div>
+					<!-- /wp:group -->
+					</div>
+					<!-- /wp:column -->
+
+		<!-- wp:column {"width":"33.33%","style":{"spacing":{"padding":{"left":"var:preset|spacing|80"},"blockGap":"0"}},"className":"sidebar right-sidebar","layout":{"type":"constrained"}} -->
+		<div class="wp-block-column sidebar right-sidebar"
+			style="padding-left:var(--wp--preset--spacing--80);flex-basis:33.33%">
+			<!-- wp:group {"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group">
+					<!-- wp:heading {"level":3,"style":{"spacing":{"padding":{"top":"0"},"margin":{"bottom":"var:preset|spacing|30","top":"var:preset|spacing|30"}}},"fontSize":"large"} -->
+					<h3 class="wp-block-heading has-large-font-size"
+						style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:0">
+						Categories</h3>
+					<!-- /wp:heading -->
+
+					<!-- wp:categories {"displayAsDropdown":true,"showPostCounts":true} /-->
+					</div>
+					<!-- /wp:group -->
+
+				<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"accent","className":"is-style-wide"} -->
+				<hr
+					class="wp-block-separator has-text-color has-accent-color has-alpha-channel-opacity has-accent-background-color has-background is-style-wide"
+					style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)" />
+				<!-- /wp:separator -->
+
+				<!-- wp:group {"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+					<div class="wp-block-group">
+						<!-- wp:heading {"level":3,"style":{"spacing":{"padding":{"top":"0"},"margin":{"bottom":"var:preset|spacing|30","top":"var:preset|spacing|30"}}},"fontSize":"large"} -->
+						<h3 class="wp-block-heading has-large-font-size"
+							style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:0">
+							Sites we like</h3>
+						<!-- /wp:heading -->
+
+						<!-- wp:navigation {"ref":9176} /-->
+						</div>
+						<!-- /wp:group -->
+						</div>
+						<!-- /wp:group -->
+
+				<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"accent","className":"is-style-wide"} -->
+				<hr
+					class="wp-block-separator has-text-color has-accent-color has-alpha-channel-opacity has-accent-background-color has-background is-style-wide"
+					style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)" />
+				<!-- /wp:separator -->
+
+				<!-- wp:group {"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group">
+					<!-- wp:search {"label":"Search","placeholder":"Search our site","width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+				</div>
+				<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+				</div>
+				<!-- /wp:column -->
+				</div>
+				<!-- /wp:columns -->
+				</div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"9px"} -->
-<div style="height:9px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"tagName":"main","layout":{"contentSize":null,"type":"constrained"}} -->
-<main class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:post-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"margin":{"bottom":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} /-->
-
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:post-author {"style":{"color":{"duotone":["#000000","#ffffff"]},"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"secondary"} /--></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:post-date {"textAlign":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"secondary"} /-->
-
-<!-- wp:outermost/social-sharing {"iconBackgroundColor":"tertiary","iconBackgroundColorValue":"#F5821F","layout":{"type":"flex","justifyContent":"right"}} -->
-<ul class="wp-block-outermost-social-sharing has-icon-background-color"><!-- wp:outermost/social-sharing-link {"service":"facebook","label":"Ruth Chafin Interior Design"} /-->
-
-<!-- wp:outermost/social-sharing-link {"service":"linkedin","label":"Ruth Chafin Interior Design"} /-->
-
-<!-- wp:outermost/social-sharing-link {"service":"x","label":"Ruth Chafin Interior Design"} /-->
-
-<!-- wp:outermost/social-sharing-link {"service":"pinterest","label":"Ruth Chafin Interior Design"} /--></ul>
-<!-- /wp:outermost/social-sharing --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:post-featured-image /-->
-
-<!-- wp:spacer {"height":"10px"} -->
-<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:post-excerpt {"moreText":"Read this post","style":{"spacing":{"padding":{"top":"0","bottom":"0"},"margin":{"top":"0"}}}} /-->
-
-<!-- wp:template-part {"slug":"post-meta-icons"} /-->
-
-<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"accent","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-accent-color has-alpha-channel-opacity has-accent-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"/>
-<!-- /wp:separator -->
-
-<!-- wp:spacer {"height":"40px"} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:group -->
-<!-- /wp:post-template -->
-
-<!-- wp:query-pagination -->
-<!-- wp:query-pagination-previous /-->
-
-<!-- wp:query-pagination-numbers /-->
-
-<!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination --></main>
-<!-- /wp:query --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"33.33%","style":{"spacing":{"padding":{"left":"var:preset|spacing|80"},"blockGap":"0"}},"className":"sidebar right-sidebar","layout":{"type":"constrained"}} -->
-<div class="wp-block-column sidebar right-sidebar" style="padding-left:var(--wp--preset--spacing--80);flex-basis:33.33%"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"spacing":{"padding":{"top":"0"},"margin":{"bottom":"var:preset|spacing|30","top":"var:preset|spacing|30"}}},"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:0">Categories</h3>
-<!-- /wp:heading -->
-
-<!-- wp:categories {"displayAsDropdown":true,"showPostCounts":true} /--></div>
-<!-- /wp:group -->
-
-<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"accent","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-accent-color has-alpha-channel-opacity has-accent-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"/>
-<!-- /wp:separator -->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"spacing":{"padding":{"top":"0"},"margin":{"bottom":"var:preset|spacing|30","top":"var:preset|spacing|30"}}},"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:0">Sites we like</h3>
-<!-- /wp:heading -->
-
-<!-- wp:navigation {"ref":9176} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"accent","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-accent-color has-alpha-channel-opacity has-accent-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"/>
-<!-- /wp:separator -->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:search {"label":"Search","placeholder":"Search our site","width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer-container"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"rcid-block-theme","tagName":"footer","className":"site-footer-container"} /-->

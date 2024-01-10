@@ -67,3 +67,35 @@ function rcid_googleapi_scripts() {
 }
 add_action( 'wp_head', 'rcid_googleapi_scripts' );
 
+/**
+ * Change Blog page title
+ * instead of title of first blog post
+ * Let’s Do Some Rearranging</h2>
+ * @param  string $block_content Block content to be rendered.
+ * @param  array  $block         Block attributes.
+ * @return string
+ * @package RCID
+ * @since 1.3.0
+ */
+function rcid_block_filter( $block_content = '', $block = array() ) {
+	if ( is_home() ) {
+		if ( isset( $block['blockName'] ) && 'core/post-title' === $block['blockName'] ) {
+			if ( isset( $block['attrs']['className'] ) && $block['attrs']['className'] === 'blog-page-title' ) {
+				$new_title   = get_the_title( get_option( 'page_for_posts' ) );
+				$new_content = '<h2 class="blog-page-title wp-block-post-title">' . $new_title . '</h2>';
+				$html        = str_replace(
+					$block_content,
+					$new_content,
+					$block_content
+				);
+				return $html;
+
+			}
+		}
+	}
+	return $block_content;
+}
+
+add_filter( 'render_block', 'rcid_block_filter', 10, 2 );
+
+
