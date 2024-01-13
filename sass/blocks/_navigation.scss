@@ -1,3 +1,4 @@
+/* Header */
 header .wp-block-navigation {
 .wp-block-navigation-link.current-menu-item a::after, .wp-block-navigation-link a:hover::after {
     content: '';
@@ -17,6 +18,11 @@ header .wp-block-navigation {
         width: 100%; /* End with 100% width */
     }
 }
+}
+
+/* Footer */
+footer .wp-block-navigation a:hover {
+	text-decoration: underline;
 }
 
 // See https://github.com/WordPress/gutenberg/issues/39052
