@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/Herm71/rcid-block-theme/compare/v1.4.0...v1.4.1) (2024-01-13)
+
+
+### Bug Fixes
+
+* :lipstick: add underline hover state to footer nav ([ce7d971](https://github.com/Herm71/rcid-block-theme/commit/ce7d971af9b2a1ecff98d9cf0449ee5b41ed9105))
+
 ## [1.4.0](https://github.com/Herm71/rcid-block-theme/compare/v1.3.1...v1.4.0) (2024-01-13)
 
 
